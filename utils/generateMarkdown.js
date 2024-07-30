@@ -57,14 +57,14 @@ function tableOfContent(license) {
   }
   return `- [License](#license)`;
 }
-
+//Function that returns the Credits section of README
 function renderCreditsSection(credits){
   if (credits === "" || "None"){
     return " "
   }
   return `${readmeContent.credits}`
 }
-
+// Function the render the Credits option in the table of content
 function tableContentCredits(credits){
   if (credits === " " || "None"){
     return ""
