@@ -9,7 +9,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+
 - [License](#license)
 
  ## Installation 
@@ -21,8 +21,7 @@
 ## Features
 
 
-## Credits
-
+ 
 
 ## License
   This project it licensed under [MIT](https://opensource.org/licenses/MIT).

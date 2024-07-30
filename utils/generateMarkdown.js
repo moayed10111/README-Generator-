@@ -51,13 +51,27 @@ function renderLicenseSection(license) {
 }
 
 // Function the render the license option in the table of content
-function tableOfContent(license){
+function tableOfContent(license) {
   if (license === "None") {
     return "";
   }
-  return `- [License](#license)`
-  ;
+  return `- [License](#license)`;
 }
+
+function renderCreditsSection(credits){
+  if (credits === "" || "None"){
+    return " "
+  }
+  return `${readmeContent.credits}`
+}
+
+function tableContentCredits(credits){
+  if (credits === " " || "None"){
+    return ""
+  }
+  return "[Credits](#credits)"
+}
+
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
@@ -74,7 +88,7 @@ function generateMarkdown(data) {
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+${tableContentCredits(readmeContent.credits)}
 ${tableOfContent(readmeContent.badge)}
 
  ## Installation 
@@ -86,8 +100,7 @@ ${tableOfContent(readmeContent.badge)}
 ## Features
 ${readmeContent.features}
 
-## Credits
-${readmeContent.credits}
+${renderCreditsSection(readmeContent.credits)}
 
 ${renderLicenseSection(readmeContent.badge)}
 

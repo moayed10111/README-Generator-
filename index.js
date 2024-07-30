@@ -50,7 +50,7 @@ const questions = [
         type: "input",
         name: "credits",
         message:
-          "list the name of the collaborators with link to thier GitHub profiles",
+          "list the name of the collaborators with link to thier GitHub profiles if applicable",
       },
       {
         type: "input",
